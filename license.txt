@@ -1,0 +1,2 @@
+
+git的add到暂存区，commit到分支
