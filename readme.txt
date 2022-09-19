@@ -5,4 +5,4 @@ hhh  wohuilaila
 git task change
 练习添加远程库
 添加分支dev
-creating a new branch is quick & simple
+creating a new branch is quick and simple
