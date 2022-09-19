@@ -7,5 +7,4 @@ git task change
 creating a new branch is quick and simple
 test branch
 分支管理
-test
-git is free software
+test01
