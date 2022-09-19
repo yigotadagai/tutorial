@@ -9,3 +9,4 @@ test branch
 分支管理
 test
 bug分支
+git is free software
