@@ -1,0 +1,29 @@
+
+
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:7001/eureka
+
+
+spring.application.name=consumer-service
+server.port=80
+feign.httpclient.enabled=true
+eureka.client.serviceUrl.defaultZone=http://127.0.0.1:7001/eureka/
+#\u5141\u8BB8\u5B58\u5728\u591A\u4E2AFeign\u8C03\u7528\u76F8\u540CService\u7684\u63A5\u53E3
+spring.main.allow-bean-definition-overriding=true
+
+ribbon.ServerListRefreshInterval=3000
+eureka.client.registry-fetch-interval-seconds=3
+eureka.instance.lease-expiration-duration-in-seconds=6
+eureka.instance.lease-renewal-interval-in-seconds=3
+
+# \u83B7\u53D6\u8FDE\u63A5\u8D85\u65F6\u65F6\u95F4
+ribbon.ConnectTimeout=60000
+# \u8BFB\u53D6\u8D85\u65F6\u65F6\u95F4
+ribbon.ReadTimeout=60000
+ribbon.MaxAutoRetries=0
+ribbon.MaxAutoRetriesNextServer=1
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=60000

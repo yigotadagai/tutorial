@@ -1,0 +1,18 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: nacos-provider9001
+  cloud:
+    nacos:
+      discovery:
+        #配置nacos地址
+        server-addr: localhost:8848
+
+management:
+  endpoints:
+    web:
+      exposure:
+        #默认只公开了/health和/info端点，要想暴露所有端点只需要设置成*
+        include: '*'

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/es-springdata/es-springdata.iml" filepath="$PROJECT_DIR$/es-springdata/es-springdata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/es-test/es-test.iml" filepath="$PROJECT_DIR$/es-test/es-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nginx-test/nginx-test.iml" filepath="$PROJECT_DIR$/nginx-test/nginx-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nginx-test1/nginx-test1.iml" filepath="$PROJECT_DIR$/nginx-test1/nginx-test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-rabbitmq/spring-rabbitmq.iml" filepath="$PROJECT_DIR$/spring-rabbitmq/spring-rabbitmq.iml" />
+    </modules>
+  </component>
+</project>
