@@ -4,6 +4,7 @@ import com.chen.pojo.CommonResult;
 import com.chen.pojo.Payment;
 import com.chen.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -19,6 +20,9 @@ public class PaymentController {
     @Resource
     private PaymentService paymentService;
 
+    @Value("${server.port}")
+    private String port;
+
     @PostMapping("/create")
     public CommonResult<Payment> create(Payment payment) {
         int result = paymentService.create(payment);
@@ -30,9 +34,10 @@ public class PaymentController {
         }
     }
 
-    @GetMapping("get/{id}")
+    @GetMapping("/get/{id}")
     public CommonResult<Payment> getPayment(@PathVariable("id") Long id) {
         Payment payment = paymentService.getPaymentById(id);
+        System.out.println("port = " + port);
         log.info("****查询结果为: " + payment);
         if (payment != null) {
             return new CommonResult<>(200, "查询成功", payment);

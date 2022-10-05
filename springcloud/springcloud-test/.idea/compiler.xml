@@ -2,12 +2,31 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springcloud-test" />
+        <module name="cloud-provider-hstrix-payment-8001" />
+        <module name="cloud-provider-8002" />
+        <module name="cloud-consumer-hystrix-dashboard9001" />
+        <module name="cloud-eureka-server" />
+        <module name="cloud-consumer-feign-hystrix-order82" />
+        <module name="cloud-provider-8001" />
+        <module name="cloudalibaba-provider9002" />
+        <module name="cloudalibaba-provider9001" />
+        <module name="cloud-gateway9527" />
+        <module name="cloudalibaba-consumer84" />
+        <module name="cloudalibaba-config3377" />
+        <module name="cloud-comsumer-feign-order" />
+        <module name="cloud-consumer-80" />
+        <module name="cloud-eureka-consumer" />
+        <module name="cloud-common-api" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-eureka-consumer" target="1.8" />
+      <module name="cloud-eureka-provider" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

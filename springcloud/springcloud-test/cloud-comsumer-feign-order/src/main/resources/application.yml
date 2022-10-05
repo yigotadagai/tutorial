@@ -1,29 +1,53 @@
+server:
+  port: 80
+spring:
+  application:
+    name: cloud-consumer-80
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+#\u4F7F\u7528Feign\u8C03\u7528\u63A5\u53E3\u5206\u4E24\u5C42\uFF0Cribbon\u7684\u8C03\u7528\u548Chystrix\u7684\u8C03\u7528\uFF0C\u6240\u4EE5ribbon\u7684\u8D85\u65F6\u65F6\u95F4\u548CHystrix\u7684\u8D85\u65F6\u65F6\u95F4\u7684\u7ED3\u5408\u5C31\u662FFeign\u7684\u8D85\u65F6\u65F6\u95F4
+#\u8BBE\u7F6EFeign\u5BA2\u6237\u7AEF\u8D85\u65F6\u65F6\u95F4\uFF08openfeign\u9ED8\u8BA4\u652F\u6301ribbon\uFF09
+ribbon:
+  ReadTimeout:  6000
+  ConnectTimeout: 6000
+  MaxAutoRetries: 1 #\u540C\u4E00\u53F0\u5B9E\u4F8B\u6700\u5927\u91CD\u8BD5\u6B21\u6570,\u4E0D\u5305\u62EC\u9996\u6B21\u8C03\u7528
+  MaxAutoRetriesNextServer: 1 #\u91CD\u8BD5\u8D1F\u8F7D\u5747\u8861\u5176\u4ED6\u7684\u5B9E\u4F8B\u6700\u5927\u91CD\u8BD5\u6B21\u6570,\u4E0D\u5305\u62EC\u9996\u6B21\u8C03\u7528
+  OkToRetryOnAllOperations: false  #\u662F\u5426\u6240\u6709\u64CD\u4F5C\u90FD\u91CD\u8BD5
+#hystrix\u7684\u8D85\u65F6\u65F6\u95F4
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 9000
 
 
-#eureka:
-#  client:
-#    register-with-eureka: true
-#    fetch-registry: true
-#    service-url:
-#      defaultZone: http://localhost:7001/eureka
 
-
-spring.application.name=consumer-service
-server.port=80
-feign.httpclient.enabled=true
-eureka.client.serviceUrl.defaultZone=http://127.0.0.1:7001/eureka/
-#\u5141\u8BB8\u5B58\u5728\u591A\u4E2AFeign\u8C03\u7528\u76F8\u540CService\u7684\u63A5\u53E3
-spring.main.allow-bean-definition-overriding=true
-
-ribbon.ServerListRefreshInterval=3000
-eureka.client.registry-fetch-interval-seconds=3
-eureka.instance.lease-expiration-duration-in-seconds=6
-eureka.instance.lease-renewal-interval-in-seconds=3
-
-# \u83B7\u53D6\u8FDE\u63A5\u8D85\u65F6\u65F6\u95F4
-ribbon.ConnectTimeout=60000
-# \u8BFB\u53D6\u8D85\u65F6\u65F6\u95F4
-ribbon.ReadTimeout=60000
-ribbon.MaxAutoRetries=0
-ribbon.MaxAutoRetriesNextServer=1
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=60000
+#spring.application.name=consumer-service
+#server.port=80
+#feign.httpclient.enabled=true
+#eureka.client.serviceUrl.defaultZone=http://127.0.0.1:7001/eureka/
+##\u5141\u8BB8\u5B58\u5728\u591A\u4E2AFeign\u8C03\u7528\u76F8\u540CService\u7684\u63A5\u53E3
+#spring.main.allow-bean-definition-overriding=true
+#
+#ribbon.ServerListRefreshInterval=3000
+#eureka.client.registry-fetch-interval-seconds=3
+#eureka.instance.lease-expiration-duration-in-seconds=6
+#eureka.instance.lease-renewal-interval-in-seconds=3
+#
+## \u83B7\u53D6\u8FDE\u63A5\u8D85\u65F6\u65F6\u95F4
+#ribbon.ConnectTimeout=60000
+## \u8BFB\u53D6\u8D85\u65F6\u65F6\u95F4
+#ribbon.ReadTimeout=60000
+#ribbon.MaxAutoRetries=0
+#ribbon.MaxAutoRetriesNextServer=1
+#hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=60000

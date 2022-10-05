@@ -1,0 +1,20 @@
+server:
+  port: 3377
+
+spring:
+  application:
+    name: nacos-config
+  cloud:
+    nacos:
+      discovery:
+        #服务注册中心地址
+        server-addr: localhost:8848
+      config:
+        #配置中心地址
+        server-addr: localhost:8848
+        #指定yml格式
+        file-extension: yaml
+        #指定group
+        group: DEV_GROUP
+        #指定namespace
+        namespace: 92b680f4-d46b-4a46-99ab-d7a8c5f8aa47
