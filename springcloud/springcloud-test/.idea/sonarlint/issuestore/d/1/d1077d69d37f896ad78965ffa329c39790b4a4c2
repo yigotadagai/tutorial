@@ -1,0 +1,16 @@
+
+[	java:S1129"FDefine and throw a dedicated exception instead of using a generic one.(¬ÀšÓ
+P
+java:S1854#"5Remove this useless assignment to local variable "i".(ÚÈŸ‡ÿÿÿÿÿ
+V	java:S125!"<This block of commented-out lines of code should be removed.(³±Ÿîüÿÿÿÿ
+A
+java:S1481#"&Remove this unused "i" local variable.(ÚÈŸ‡ÿÿÿÿÿ
+t
+java:S2142&"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+c	java:S100B"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°´‚ž
+?
+java:S1172B")Remove this unused method parameter "id".(°´‚ž
+_
+java:S1128"BRemove this unused import 'java.util.concurrent.TimeoutException'.(£‡Ì8àÍ¶à¸0
+^
+java:S3518#"CMake sure this expression can't be zero before doing this division.(ÚÈŸ‡ÿÿÿÿÿ

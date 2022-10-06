@@ -1,0 +1,9 @@
+
+T
+java:S1128"2Remove this unused import 'com.myrule.MySelfRule'.(†íú÷ÿÿÿÿÿ8º›½º¸0
+X
+java:S1128";Remove this unused import 'com.netflix.loadbalancer.IRule'.(ºßİï8Œ­™º¸0
+t
+java:S1128"RRemove this unused import 'org.springframework.cloud.netflix.ribbon.RibbonClient'.(âèª…øÿÿÿÿ8»›½º¸0
+c
+java:S1128	"FRemove this unused import 'org.springframework.core.annotation.Order'.(Ö¨æ8­™º¸0
