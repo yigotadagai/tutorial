@@ -39,8 +39,6 @@ Vcloud-comsumer-feign-order/src/main/java/com/chen/controller/OrderFeignControll
 Ycloud-provider-hstrix-payment-8001/src/main/java/com/chen/HystrixProviderApplication.java,a/5/a5472d95d9367c8212e8bd0bafc00ddd5d529943
 „
 Tcloud-consumer-feign-hystrix-order82/src/main/java/com/chen/ConsumerApplication.java,4/3/435a148c2385ee89bd172b994b8c363364752062
-Ž
-^cloud-consumer-feign-hystrix-order82/src/main/java/com/chen/controller/ConsumerController.java,e/e/eed3b34cafd44714e0d9fe703a58f7cb1d59344b
 ˆ
 Xcloud-consumer-feign-hystrix-order82/src/main/java/com/chen/service/ConsumerService.java,b/3/b3852c67b73fcdde3706438bc0164ff607070a39
 …
@@ -101,7 +99,3 @@ O
 cloudalibaba-config3377/pom.xml,4/1/411046d1232f19548bdddf10e86704b4e7b73c63
 y
 Icloudalibaba-config3377/src/main/java/com/chen/Config3377Application.java,f/3/f329c0384794b23ec36ae3af3dfd18959dbc4462
-…
-Ucloudalibaba-config3377/src/main/java/com/chen/controller/ConfigClientController.java,b/7/b7694816c34225ef98b3f9634a902778390265d5
-‚
-Rcloudalibaba-provider9002/src/main/java/com/chen/controller/PaymentController.java,7/1/7143f8f9f7023ed7ce99e8c4d787bef7937fb114

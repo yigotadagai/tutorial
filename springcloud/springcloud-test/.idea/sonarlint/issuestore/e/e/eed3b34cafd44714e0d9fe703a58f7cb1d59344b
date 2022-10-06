@@ -1,12 +1,0 @@
-
-c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑØ­ˆ
-c	java:S100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­¸Ç¹
-Q	java:S125$"<This block of commented-out lines of code should be removed.(Ù•ÅÝ
-X	java:S125,"<This block of commented-out lines of code should be removed.(Þ•Ž…8•¸Ôß¸0
-c	java:S1003"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ª•ë
-O
-java:S34004"9Remove this method and declare a constant for this value.(ÁˆÁ’
->
-java:S11723"(Remove this unused method parameter "i".(§ª•ë
-O
-java:S34009"9Remove this method and declare a constant for this value.(µìóÐ

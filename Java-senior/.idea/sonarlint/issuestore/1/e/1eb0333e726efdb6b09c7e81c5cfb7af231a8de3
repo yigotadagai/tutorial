@@ -1,0 +1,12 @@
+
+U
+java:S1854":Remove this useless assignment to local variable "thread".(¹’Í¤ûÿÿÿÿ
+/
+java:S2438""cat" is a "Thread".(¹’Í¤ûÿÿÿÿ
+F
+java:S1481"+Remove this unused "thread" local variable.(¹’Í¤ûÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(¯çÔÒûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(»‰·È
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(¹›þü
+t
+java:S2142,"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
