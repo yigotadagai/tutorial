@@ -1,21 +1,0 @@
-
-Y
-java:S1854">Remove this useless assignment to local variable "saleTicket".(«û®”øÿÿÿÿ
-J
-java:S1481"/Remove this unused "saleTicket" local variable.(«û®”øÿÿÿÿ
-B
-java:S1602",Remove useless curly braces around statement(¥—ýð
-S
-java:S1612"=Replace this lambda with method reference 'SaleTicket::sale'.(¥—ýð
-B
-java:S1602",Remove useless curly braces around statement(¥—ýð
-S
-java:S1612"=Replace this lambda with method reference 'SaleTicket::sale'.(¥—ýð
-B
-java:S1602",Remove useless curly braces around statement(¥—ýð
-S
-java:S1612"=Replace this lambda with method reference 'SaleTicket::sale'.(¥—ýð
-t
-java:S2142&"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
-S	java:S106!"9Replace this use of System.out or System.err by a logger.(Ø›Å úÿÿÿÿ
-S	java:S106$"9Replace this use of System.out or System.err by a logger.(´Õêžýÿÿÿÿ
