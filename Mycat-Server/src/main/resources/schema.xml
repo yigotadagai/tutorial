@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE mycat:schema SYSTEM "schema.dtd">
+<mycat:schema xmlns:mycat="http://io.mycat/">
+
+	<!--
+  schema 标签：配置虚拟库，里面子标签配置虚拟表。
+  name 属性：给当前 schema 标签命名，便于其它地方引用。同时也是指定虚拟数据库的名称。
+ -->
+	<schema name="virtual-db-hello">
+
+		<!-- table 标签：配置虚拟表。 -->
+		<!-- name 属性：指定虚拟表的名称。 -->
+		<!-- dataNode 属性：通过指定 dataNode 指定当前虚拟表要连接的物理库。如果有多个，可以使用逗号分开，也可以使用 dn$1-3 这样的表达式。 -->
+		<!-- subTables 属性：指定虚拟表对应的物理表。 -->
+		<table name="virtual_t_emp"
+			   primaryKey="emp_id"
+			   dataNode="data-node-hello"
+			   autoIncrement="true"
+			   fetchStoreNodeByJdbc="true"
+			   subTables="t_emp1, t_emp2, t_emp3"
+			   rule="mod-long"
+		/>
+	</schema>
+
+	<!--
+  dataNode 标签：配置数据节点。本质上是连接到数据库服务器上的一个具体物理数据库。
+  name 属性：给当前 dataNode 标签命名，便于其它地方引用。
+  dataHost 属性：引用一个已经配置好的 dataHost。
+  database 属性：指定一个具体的物理库的名称。
+-->
+	<dataNode name="data-node-hello" dataHost="virtual-host-hello" database="db_shop" />
+
+	<!--
+  dataHost 标签：配置物理库的连接方式。可以配置多个。本质上是连接到数据库服务器。
+  name 属性：给当前 dataHost 标签命名，便于其它地方引用。
+ -->
+	<dataHost name="virtual-host-hello"
+			  maxCon="1000"
+			  minCon="10"
+			  balance="0"
+			  writeType="0"
+			  dbType="mysql"
+			  dbDriver="jdbc"
+			  switchType="1"
+			  slaveThreshold="100">
+
+		<!--
+          heartbeat 标签：设置做心跳检查时使用的 SQL 语句。
+        -->
+		<heartbeat>select user()</heartbeat>
+		<!--
+          writeHost 标签：负责建立 MySQL 读写分离后，写服务器的实例
+          host 属性：命名。
+          url 属性：物理库的 URL 地址
+          user 属性：连接物理库使用的用户名
+          password 属性：连接物理库使用的密码
+         -->
+		<writeHost host="hostM1"
+				   url="jdbc:mysql://172.16.98.130:3306"
+				   user="root"
+				   password="12345678"/>
+
+		<!-- readHost 标签：负责建立 MySQL 读写分离后，读服务器的实例 -->
+
+	</dataHost>
+</mycat:schema>
