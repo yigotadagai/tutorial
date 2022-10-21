@@ -1,0 +1,12 @@
+
+C
+java:S1170
+"!Make this final field static too.(ãÊÿ‹üÿÿÿÿ8¨î˜ÿ¾0
+S	java:S106"9Replace this use of System.out or System.err by a logger.(çˆ¬Øıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¡Ê‡‡
+S	java:S106"9Replace this use of System.out or System.err by a logger.(À°¿üÿÿÿÿ
+@
+java:S1068	"%Remove this unused "a" private field.(ş®ˆÕşÿÿÿÿ
+G
+java:S1068
+"%Remove this unused "b" private field.(ãÊÿ‹üÿÿÿÿ8¸î˜ÿ¾0

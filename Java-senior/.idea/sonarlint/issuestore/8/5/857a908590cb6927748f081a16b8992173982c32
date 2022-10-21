@@ -1,0 +1,11 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(©’ø†
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ú®þÂ
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(ÿ¿Äó
+N	java:S106""9Replace this use of System.out or System.err by a logger.(éÂ«§
+d
+java:S1128"IRemove this unused import 'com.sun.org.apache.bcel.internal.generic.NEW'.(èú¨Óþÿÿÿÿ
+[
+java:S1128"ERemove this unused import 'java.util.concurrent.locks.ReadWriteLock'.(Í¿×ä
+P
+java:S1191"5Use classes from the Java API instead of Sun classes.(èú¨Óþÿÿÿÿ

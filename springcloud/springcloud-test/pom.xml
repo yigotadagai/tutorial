@@ -22,6 +22,9 @@
       <module>cloudalibaba-consumer84</module>
       <module>cloudalibaba-config3377</module>
       <module>cloudalibaba-sentinel-service8401</module>
+      <module>cloudalibaba-sentinel-provider9003</module>
+      <module>cloudalibaba-sentinel-provider9004</module>
+      <module>cloudalibaba-sentinel-consumer84</module>
   </modules>
   <packaging>pom</packaging>
 
