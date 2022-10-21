@@ -1,4 +1,4 @@
-package com.chen;
+package com.chen.juc;
 
 import java.util.concurrent.TimeUnit;
 
