@@ -121,3 +121,17 @@ Vcloudalibaba-sentinel-provider9004/src/main/java/com/chen/Provider9004Applicati
 Vcloudalibaba-sentinel-provider9003/src/main/java/com/chen/Provider9003Application.java,5/6/563746ef97afebea2971648521de723a5ce25ebc
 å
 \cloudalibaba-sentinel-consumer84/src/main/java/com/chen/config/ApplicationContextConfig.java,4/f/4f01c85b9194270b7f15eb6392ef62a09ba4310a
+å
+\cloudalibaba-sentinel-provider9003/src/main/java/com/chen/controller/ProviderController.java,3/7/37bcf5e08c07bf30cf1d682ce0ea88894ac9a050
+Ç
+Rcloudalibaba-sentinel-consumer84/src/main/java/com/chen/Consumer84Application.java,6/5/656d0771c0434d1956f497c14b20d5dc277f6bcb
+X
+(cloudalibaba-sentinel-consumer84/pom.xml,5/5/5567938bfe9872a1178d1722a7b6cf04fbc830a5
+ã
+[cloudalibaba-sentinel-consumer84/src/main/java/com/chen/service/PaymentFallbackService.java,9/9/990e1cb666c549e5ac554dd44835c6c2d119038d
+Y
+)cloudalibaba-sentinel-service8401/pom.xml,9/9/9936da1fbbc6ffcc16b3280519f47bb14677da9c
+è
+_cloudalibaba-sentinel-consumer84/src/main/java/com/chen/controller/CircleBreakerController.java,2/2/221f8ec3e599a4e33e35d84b1f3ac398cf3ad383
+à
+Xcloudalibaba-sentinel-service8401/src/main/java/com/chen/SentinelServiceApplication.java,a/c/aca45f9a5679213cf02526c14dce61f9b70d3cda
