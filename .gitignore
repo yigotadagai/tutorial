@@ -44,4 +44,8 @@ buildNumber.properties
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
 
-.idea/
+#ignore idea
+.idea
+*.iml
+out
+gen

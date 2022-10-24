@@ -9,7 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-provider-hstrix-payment-8001" />
         <module name="cloud-provider-8002" />
-        <module name="cloud-eureka-consumer" />
+        <module name="cloud-common-api" />
+        <module name="cloud-consumer-hystrix-dashboard9001" />
         <module name="cloud-eureka-server" />
         <module name="cloud-consumer-feign-hystrix-order82" />
         <module name="cloud-provider-8001" />
@@ -19,13 +20,12 @@
         <module name="cloudalibaba-sentinel-consumer84" />
         <module name="cloudalibaba-consumer84" />
         <module name="cloudalibaba-config3377" />
-        <module name="cloudalibaba-sentinel-provider9003" />
         <module name="cloud-comsumer-feign-order" />
         <module name="cloudalibaba-sentinel-service8401" />
         <module name="cloud-consumer-80" />
-        <module name="cloud-consumer-hystrix-dashboard9001" />
+        <module name="cloud-eureka-consumer" />
         <module name="cloudalibaba-sentinel-provider9004" />
-        <module name="cloud-common-api" />
+        <module name="cloudalibaba-sentinel-provider9003" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
